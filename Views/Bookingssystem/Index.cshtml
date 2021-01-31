@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Projekt.Models.Bookingssystem>
+
+@{
+    ViewData["Title"] = "Bokning lyckades";
+}
+
+<h1 class="tackh1">Tack för din bokning</h1>
+
+<p class="confirmtxt">
+    Vi har tagit emot din bokning.<br />
+    Vi ses där.
+</p>
+<h2 class="nuh2">Dina nuvarande bokningar</h2>
+<table style="width: 800px;" id="booktable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MobilNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Service)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Time)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MobilNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Service)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Time)
+                </td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
+<br />

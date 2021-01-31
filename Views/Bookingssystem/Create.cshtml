@@ -1,0 +1,85 @@
+﻿@model Projekt.Models.Bookingssystem
+
+@{
+    ViewData["Title"] = "Boka en frisörtid";
+}
+
+ <h1 class="bokah1">Boka en frisörtid</h1>
+
+<hr class="bokahr" />
+<div class="Main">
+    <form asp-action="Create" class="BookForm" novalidate>
+        <div class="BookRow">
+            <div asp-validation-summary="ModelOnly" class="warning"></div>
+            <div class="Col25">
+                <label id="fullnamelabel" asp-for="FullName" class="label"></label>
+            </div>
+            <div class="Col50">
+                <input asp-for="FullName" class="input" required />
+            </div>
+            <span asp-validation-for="FullName" class="warning"></span>
+        </div>
+        <br />
+        <div class="BookRow">
+              <div class="Col25">
+                    <label asp-for="Mail" class="label"></label>
+               </div>
+            <div class="Col50">
+                <input asp-for="Mail" type="email" class="input" id="bookmail" required />
+            </div>
+            <span asp-validation-for="Mail" class="warning"></span>
+        </div>
+        <br />
+
+        <div class="BookRow">
+             <div class="Col25">
+                <label asp-for="MobilNumber" class="label"></label>
+              </div>
+            <div class="Col50">
+                <input id="booknr" asp-for="MobilNumber" required class="input" />
+            </div>
+            <span asp-validation-for="MobilNumber" class="warning"></span>
+        </div>
+        <br />
+        <div class="BookRow">
+             <div class="Col25">
+                <label asp-for="Service" class="label"></label>
+             </div>
+            <div class="Col50">
+                <select id="bookservice" asp-for="Service" class="selectarea">
+                    <option value="Herr hårklippning">Herr hårklippning</option>
+                    <option value="Dam hårklippning">Dam hårklippning</option>
+                    <option value="Pensionärer/Studenter hårklippning">Pensionärer/Studenter hårklippning</option>
+                    <option value="Barn 0-10 hårklippning">Barn 0-10 hårklippning</option>
+                    <option value="Barn 10-18 hårklippning">Barn 10-18 hårklippning</option>
+                    <option value="Skäggtrimning">Skäggtrimning</option>
+                    <option value="Färgning">Färgning</option>
+                    <option value="Slingor">Slingor</option>
+                </select>
+            </div>
+            <span asp-validation-for="Service" class="warning"></span>
+        </div>
+        <br />
+        <div class="BookRow">
+            <div class="Col25">
+                <label asp-for="Date" class="label"></label>
+            </div>
+            <div class="Col50">
+                <input id="bookdate" required type="date" asp-for="Date" class="input" />
+            </div>
+            <span asp-validation-for="Date" class="warning"></span>
+        </div>
+        <br />
+        <div class="BookRow">
+            <div class="Col25">
+                <label asp-for="Time" class="label"></label>
+            </div>
+            <div class="Col50">
+                <input id="booktime" required type="time" asp-for="Time" class="input" />
+            </div>
+            <span asp-validation-for="Time" class="warning"></span>
+        </div><br />
+        <input type="submit" value="Boka" class="BookBtn" />
+    </form>
+</div>
+<br />

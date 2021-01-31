@@ -1,0 +1,44 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Registrera dig";
+}
+
+<h1 id="registerh1">@ViewData["Title"]</h1>
+<form asp-route-returnUrl="@Model.ReturnUrl" class="RegisterForm" method="post">
+    <h4>Skapa ett nytt konto.</h4>
+    <hr />
+    <br />
+    <div asp-validation-summary="All" class="warning"></div>
+    <div class="RegisterRow">
+         <div class="Col25">
+            <label id="registermaillabel" class="label" asp-for="Input.Email"></label>
+         </div>
+        <div class="Col50">
+            <input asp-for="Input.Email" id="registermail" class="input" />
+        </div>
+        <span asp-validation-for="Input.Email" class="warning"></span>
+    </div>
+    <br />
+    <div class="RegisterRow">
+        <div class="Col25">
+            <label id="registerpswlabel" class="label" asp-for="Input.Password"></label>
+        </div>
+        <div class="Col50">
+            <input asp-for="Input.Password" id="registerpsw" class="input" />
+        </div>
+        <span asp-validation-for="Input.Password" class="warning"></span>
+    </div><br />
+          <div class="RegisterRow">
+              <div class="Col25">
+                <label id="registerconfirmpswlabel" class="label" asp-for="Input.ConfirmPassword"></label>
+              </div>
+              <div class="Col50">
+                  <input asp-for="Input.ConfirmPassword" id="registerconfirmpsw" class="input" />
+              </div>
+              <span asp-validation-for="Input.ConfirmPassword" class="warning"></span>
+          </div><br />
+    <button type="submit" class="RegisterBtn">Registrera sig</button><br />
+</form>
+   
+

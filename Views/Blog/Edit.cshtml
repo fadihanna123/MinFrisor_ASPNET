@@ -1,0 +1,78 @@
+﻿@model Projekt.Models.Blog
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Ändra blogginlägget";
+}
+@if (SignInManager.IsSignedIn(User))
+{
+    <h1>Ändra blogginlägget</h1>
+
+    <hr />
+    <div class="Main">
+            <form asp-action="Edit" class="EditForm">
+                <div asp-validation-summary="ModelOnly" class="warning"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="EditRow">
+                    <div class="Col25">
+                        <label asp-for="Title" class="label"></label>
+                    </div>
+                    <div class="Col50">
+                        <input id="Title" asp-for="Title" class="input" />
+                    </div>
+                    <span asp-validation-for="Title" class="warning"></span>
+                </div>
+                <br />
+                      <div class="EditRow">
+                          <div class="Col25">
+                            <label asp-for="Author" class="label"></label>
+                          </div>
+                          <div class="Col50">
+                              <input id="Author" asp-for="Author" class="input" />
+                          </div>
+                          <span asp-validation-for="Author" class="warning"></span>
+                      </div>
+                      <br />
+                            <div class="EditRow">
+                                <div class="Col25">
+                                    <label asp-for="Content" class="label"></label>
+                                </div>
+                                <div class="Col50">
+                                    <textarea id="Content" asp-for="Content" class="txtarea"></textarea>
+                                </div>
+                                <span asp-validation-for="Content" class="warning"></span>
+                            </div>
+                            <br />
+                                  <div class="EditRow">
+                                      <div class="Col25">
+                                        <label asp-for="Date" class="label"></label>
+                                      </div>
+                                      <div class="Col50">
+                                          <input id="Date" asp-for="Date" class="input" />
+                                      </div>
+                                          <span asp-validation-for="Date" class="warning"></span>
+                                      </div>
+                                      <br />
+                                          <input type="submit" value="Spara ändringar" class="EditBtn" />
+</form>
+    </div>
+    <br />
+
+    <div>
+        <a class="link" asp-action="Index">Visa alla blogginlägg</a>
+    </div>
+    <br />
+
+   
+
+
+}
+else
+{
+    <script>
+        window.location.href = "@Url.Action("Index","Home")";
+    </script>
+
+}

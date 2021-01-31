@@ -1,0 +1,72 @@
+﻿@model Projekt.Models.Blog
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    ViewData["Title"] = "Skapa blogginlägg";
+}
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <h1>Skapa blogginlägg</h1>
+    <hr />
+    <div class="Main">
+        <form asp-action="Create" class="CreatePostForm">
+            <div asp-validation-summary="ModelOnly" class="warning"></div>
+            <div class="CreatePostRow">
+                <div class="Col25">
+                    <label asp-for="Title" class="label"></label>
+                </div>
+                <div class="Col50">
+                    <input asp-for="Title" class="input" />
+                </div>
+                <span asp-validation-for="Title" class="warning"></span>
+            </div>
+            <br />
+                  <div class="CreatePostRow">
+                      <div class="Col25">
+                        <label asp-for="Author" class="label"></label>
+                      </div>
+                      <div class="Col50">
+                          <input asp-for="Author" class="input" />
+                      </div>
+                          <span asp-validation-for="Author" class="warning"></span>
+                      </div>
+                      <br />
+                            <div class="CreatePostRow">
+                                 <div class="Col25">
+                                    <label asp-for="Content" class="label"></label>
+                                 </div>
+                                <div class="Col50">
+                                    <textarea asp-for="Content" class="txtarea"></textarea>
+                                </div>
+                                <span asp-validation-for="Content" class="warning"></span>
+                            </div>
+                            <br />
+                                  <div class="CreatePostRow">
+                                      <div class="Col25">
+                                        <label asp-for="Date" class="label"></label>
+                                      </div>
+                                      <div class="Col50">
+                                          <input asp-for="Date" class="input" />
+                                      </div>
+                                          <span asp-validation-for="Date" class="warning"></span>
+                                      </div><br />
+            <input type="submit" value="Skapa" class="CreatePostBtn" />
+        </form>
+        </div>
+        <br />
+    <div>
+        <a asp-action="Index" class="link">Visa alla blogginlägg</a>
+    </div>
+    <br />
+
+    
+}
+else
+{
+    <script>
+        window.location.href = "@Url.Action("Index","Home")";
+    </script>
+
+}

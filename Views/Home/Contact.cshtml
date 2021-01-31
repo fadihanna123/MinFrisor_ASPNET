@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Kontakta oss";
+}
+<h1>Kontakta oss</h1>
+<p id="contacttxt">
+    Du kan nå oss antingen via dessa digitala kanaler eller att använda kontaktformulär nedan:
+<br />
+<b>Telefonnummer:</b> 
+    <a href="tel:0808444975" class="link">08-08444975</a>.
+<br />
+<b>Mobilnummer:</b> 
+    <a href="tel:072897526" class="link">072-897526</a>.
+<br />
+<b>Facebook:</b> 
+    <a href="#" class="link">Minfrisör</a>.
+<br />
+</p>
+<div class="Main">
+    <form action="" class="ContactForm">
+        <div class="ContactRow">
+            <div class="Col25">
+                <label for="fullname">
+                    <b>Ditt namn:</b>
+                </label>
+            </div>
+            <div class="Col65">
+                <input type="text" id="fullname" class="input" name="fullname" required />
+            </div>
+        </div>
+        <div class="ContactRow">
+            <div class="Col25">
+                <label for="mail">
+                    <b>Din e-postadress:</b>
+                </label>
+            </div>
+            <div class="Col65">
+                <input type="email" id="mail" class="input" name="mail" />
+            </div>
+        </div>
+        <div class="ContactRow">
+            <div class="Col25">
+                <label for="nr">
+                    <b>Ditt mobilnummer:</b>
+                </label>
+            </div>
+            <div class="Col65">
+                <input type="text" id="nr" class="input" name="nr" />
+            </div>
+        </div>
+        <div class="ContactRow">
+            <div class="Col25">
+                <label for="msg">
+                    <b>Meddelande:</b>
+                </label>
+            </div>
+            <div class="Col65">
+                <textarea id="msg" name="msg" class="txtarea" required></textarea>
+            </div>
+        </div>
+            <input type="submit" class="ContactBtn" value="Skicka" />
+    </form>
+</div>

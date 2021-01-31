@@ -1,4 +1,5 @@
 ## 1. Min frisör ASP.NET
+
 Detta är en webbapplikation som hjälper kunder att boka frisörtider, kunna registrera sig, logga in och främst kunna se nyheter och adminstrera inlägg i webbplatsen. <br />
 **Intränatapplikation har 8 funktioner:** <br />
 1 - se nyheterna som inlägg. <br>
@@ -19,15 +20,16 @@ Webbapplikationen är responsivt.<br />
 8 - Registrera sig <br />
 
 ## 1.2 Mappstruktur <br>
+
 Areas/ <br />
 Areas/IdentityHostingStartup.cs <br />
 Areas/Identity/ <br />
 Areas/Identity/Pages/ <br />
 Areas/Identity/Pages/Error.cshtml <br />
 Areas/Identity/Pages/Error.cshtml.cs <br />
-Areas/Identity/Pages/_ValidationScriptsPartial.cshtml <br />
-Areas/Identity/Pages/_ViewImports.cshtml <br />
-Areas/Identity/Pages/_ViewStart.cshtml <br />
+Areas/Identity/Pages/\_ValidationScriptsPartial.cshtml <br />
+Areas/Identity/Pages/\_ViewImports.cshtml <br />
+Areas/Identity/Pages/\_ViewStart.cshtml <br />
 Areas/Identity/Pages/Account/ <br />
 Areas/Identity/Pages/Account/Login.cshtml <br />
 Areas/Identity/Pages/Account/Login.cshtml.cs <br />
@@ -35,8 +37,8 @@ Areas/Identity/Pages/Account/Logout.cshtml <br />
 Areas/Identity/Pages/Account/Logout.cshtml.cs <br />
 Areas/Identity/Pages/Account/Register.cshtml <br />
 Areas/Identity/Pages/Account/Register.cshtml.cs <br />
-Areas/Identity/Pages/Account/_StatusMessage.cshtml <br />
-Areas/Identity/Pages/Account/_ViewImports.cshtml <br />
+Areas/Identity/Pages/Account/\_StatusMessage.cshtml <br />
+Areas/Identity/Pages/Account/\_ViewImports.cshtml <br />
 Controllers/ <br />
 Controllers/BlogController.cs <br />
 Controllers/BookingssystemController.cs <br />
@@ -59,8 +61,8 @@ Models/ErrorViewModel.cs <br />
 Properties/ <br />
 Properties/launchSettings.json <br />
 Views/ <br />
-Views/_ViewImports.cshtml <br />
-Views/_ViewStart.cshtml <br />
+Views/\_ViewImports.cshtml <br />
+Views/\_ViewStart.cshtml <br />
 Views/Blog/ <br />
 Views/Blog/Create.cshtml <br />
 Views/Blog/Delete.cshtml <br />
@@ -77,9 +79,9 @@ Views/Blog/Home/Index.cshtml <br />
 Views/Blog/Home/Prices.cshtml <br />
 Views/Shared/ <br />
 Views/Shared/Error.cshtml <br />
-Views/Shared/_Layout.cshtml <br />
-Views/Shared/_LoginPartial.cshtml <br /> 
-Views/Shared/_ValidationScriptsPartial.cshtml <br />
+Views/Shared/\_Layout.cshtml <br />
+Views/Shared/\_LoginPartial.cshtml <br />
+Views/Shared/\_ValidationScriptsPartial.cshtml <br />
 wwwroot/ <br />
 wwwroot/css/ <br />
 wwwroot/css/main.css <br />
@@ -108,9 +110,9 @@ Du kan ladda ner alla dessa filer och installera källkodsfiler i din lokala ser
 C#, HTML, CSS och Javascript. <br />
 
 ## 1.5 Ramverk: <br />
-ASPNET.Core
+
+ASPNET.CORE
 
 ## 1.6 Skärmdump av Intränatapplikation <br />
 
 ![alt text](https://github.com/fadihanna123/ASPNET_Projekt/blob/master/aspnet.PNG "Screenshot av hemsidan")
-# MinFrisor_ASPNET

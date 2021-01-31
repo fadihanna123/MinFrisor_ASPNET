@@ -1,0 +1,51 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Logga in";
+}
+
+<h1 id="loginh1">@ViewData["Title"]</h1>
+<div class="Main">
+        <section>
+            <form id="accountForm" method="post">
+             <div asp-validation-summary="All" class="warning"></div>
+                <h4 id="loginh4">Inloggning gäller bara för personal.</h4>
+                <hr id="loginhr" />
+                <br />
+                <div class="LoginRow">
+                    <div class="Col35">
+                        <label asp-for="Input.Email"><b>E-postadress:</b></label>
+                    </div>
+                    <div class="Col30">
+                        <input id="Input_Email" type="email" asp-for="Input.Email" class="input" />
+                    </div>
+                    <span asp-validation-for="Input.Email" class="warning"></span>
+                </div>
+                <br />
+                <div class="LoginRow">
+                    <div class="Col35">
+                        <label asp-for="Input.Password"><b>Lösenord:</b></label>
+                    </div>
+                    <div class="Col30">
+                        <input id="Input_Password" asp-for="Input.Password" class="input" />
+                    </div>
+                    <span asp-validation-for="Input.Password" class="warning"></span>
+                </div><br />
+                    <div class="mb">
+                        <div>
+                            <label asp-for="Input.RememberMe">
+                                <input asp-for="Input.RememberMe" />
+                                @Html.DisplayNameFor(m => m.Input.RememberMe)
+                            </label>
+                        </div>
+                    </div>
+                    <br />
+                    <div>
+                        <button type="submit" class="LoginBtn">Logga in</button>
+                    </div>
+
+</form>
+</section>
+   
+</div><br />

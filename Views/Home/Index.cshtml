@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Projekt.Models.Blog>
+
+@{
+    ViewData["Title"] = "Startsida";
+}
+
+
+<h1>Välkommen till Min Frisör</h1>
+<p>Här erbjuder vi bra service mot låga priser.</p>
+<h2>Nyheter</h2>
+<br />
+
+@foreach (var item in Model)
+{
+    <div class="card">
+        <div>
+            <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+            @Html.DisplayFor(modelItem => item.Author)
+            @Html.DisplayFor(modelItem => item.Date)
+            <p>@Html.DisplayFor(modelItem => item.Content)</p>
+        </div>
+    </div>
+    <br />
+}
+<br />

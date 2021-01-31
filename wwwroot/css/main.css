@@ -1,0 +1,646 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  font-size: 100%;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#container {
+  font-family: Cambria, Georgia;
+  width: 1400px;
+  margin: 0 auto;
+  background: #bdedff;
+  overflow: hidden;
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  padding: 2px 16px;
+  font-size: 22px;
+  line-height: 2em;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.DeleteForm {
+  padding: 10px;
+}
+
+.CreatePostForm {
+  padding: 10px;
+}
+
+.CreatePostRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.logobox {
+  background: url(../img/logo.jpg) no-repeat center center;
+  height: 320px;
+  margin: 10px;
+}
+
+.left {
+  float: left;
+  padding: 10px;
+}
+
+.Col20 {
+  width: 20%;
+}
+
+.Col30 {
+  width: 30%;
+}
+
+.Col35 {
+  width: 35%;
+}
+
+.center {
+  float: left;
+  width: 70%;
+  margin: 10px;
+}
+
+.center p {
+  font-size: 20px;
+}
+
+.first_image {
+  width: 250px;
+  height: 250px;
+  margin: 10px 10px;
+}
+
+.second_image {
+  width: 250px;
+  height: 250px;
+  margin: 10px 10px;
+}
+
+.footer {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  font-style: italic;
+}
+
+.row {
+  margin: 0 10px 0 10px;
+  border-radius: 15px;
+  background: #addfff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #292b2c;
+  overflow: hidden;
+}
+
+.ContactForm {
+  padding: 10px;
+}
+
+.RegisterForm {
+  padding: 10px;
+}
+
+.RegisterRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.EditRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.ContactBtn {
+  background-color: #0275d8;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #f7f7f7;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.DeleteBtn {
+  background-color: #d9534f;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #f7f7f7;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.EditBtn {
+  background-color: #0275d8;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #f7f7f7;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.CreatePostBtn {
+  background-color: #0275d8;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #f7f7f7;
+  padding: 10px;
+}
+
+.LoginBtn {
+  background-color: #0275d8;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #f7f7f7;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.RegisterBtn {
+  background-color: #0275d8;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #f7f7f7;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.BookBtn {
+  background-color: #0275d8;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #f7f7f7;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.BookBtn:hover {
+  color: #292b2c;
+}
+
+.EditBtn:hover {
+  color: #292b2c;
+}
+
+.CreatePostBtn:hover {
+  color: #292b2c;
+}
+
+.LoginBtn:hover {
+  color: #292b2c;
+}
+
+.RegisterBtn:hover {
+  color: #292b2c;
+}
+
+.ContactBtn:hover {
+  color: #292b2c;
+}
+
+#logoutbtn:hover {
+  color: #292b2c;
+}
+
+.ContactRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.LoginRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.warning {
+  color: #d9534f;
+}
+
+.BookRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.EditForm {
+  padding: 10px;
+}
+
+.input,
+.txtarea,
+.selectarea {
+  display: block;
+  width: 100%;
+  min-height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.Col25 {
+  width: 25%;
+}
+
+.Col65 {
+  width: 65%;
+}
+
+.desktopmeny {
+  border-radius: 15px;
+  margin: 0 10px 0 10px;
+  max-height: 45px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid black;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+}
+
+.LogoutForm {
+  margin-left: 10px;
+}
+
+.desktopmeny a {
+  font-size: 14px;
+  border-right: 1px solid #000;
+  text-decoration: none;
+  display: inline-block;
+  color: #d9534f;
+  padding: 10px;
+}
+
+#contacttxt {
+  font-size: 20px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+#Bookbtn {
+  margin-left: 150px;
+}
+
+.prices table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.prices {
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.desktopmeny a:hover {
+  background: #add8e6;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td:hover {
+  background: #f7f7f7;
+}
+
+.table td {
+  padding: 10px;
+}
+
+.table th {
+  background: #292b2c;
+  color: #f7f7f7;
+  padding: 10px;
+}
+
+.first {
+  border-left: 1px solid #000;
+}
+
+#logoutbtn {
+  background-color: #d9534f;
+  color: #f7f7f7;
+  padding: 10px;
+  margin-top: 1px;
+  margin-bottom: 6px;
+}
+
+.Main {
+  margin: 10px;
+}
+
+.input:hover,
+.txtarea:hover {
+  border-color: #0275d8;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;
+  outline: 0 none;
+}
+
+.BookForm {
+  padding: 10px;
+}
+
+.label {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.Col50 {
+  width: 50%;
+}
+
+#abouttxt {
+  font-size: 20px;
+}
+
+#accountForm {
+  padding: 10px;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1900px) {
+  body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #container {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    overflow: hidden;
+  }
+
+  .table td {
+    padding: 0;
+  }
+
+  .LoginRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .CreatePostRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .Col35 {
+    width: 100%;
+  }
+
+  .Col40 {
+    width: 100%;
+  }
+
+  .RegisterRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .EditRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .logobox {
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: center;
+    margin: 10px 10px 0 10px;
+  }
+
+  .prices {
+    width: 400px;
+  }
+
+  .center {
+    width: 95%;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .footer {
+    display: inline-block;
+    width: 500px;
+    font-size: 20px;
+  }
+
+  .desktopmeny {
+    max-height: 500px;
+    height: 350px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .Col20 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Col30 {
+    width: 100%;
+  }
+
+  .desktopmeny a {
+    border: none;
+  }
+
+  .bokah1 {
+    white-space: nowrap;
+  }
+
+  .bokahr {
+    width: 400px;
+  }
+
+  .Col25 {
+    width: 100%;
+  }
+
+  .Col50 {
+    width: 100%;
+  }
+
+  #fullnamelabel {
+    white-space: nowrap;
+  }
+
+  .utbildah1 {
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .coursetxt {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .tackh1 {
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 25px;
+  }
+
+  .ContactRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .BookRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .nuh2 {
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 25px;
+  }
+
+  .confirmtxt {
+    margin-left: 10px;
+    width: 400px;
+    font-size: 10px;
+  }
+
+  #booktable {
+    width: 10px;
+    height: 600px;
+    position: relative;
+    right: 20px;
+  }
+
+  #contacttxt {
+    text-align: center;
+  }
+
+  #abouttxt {
+    text-align: center;
+  }
+
+  #vemh1 {
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 25px;
+  }
+
+  #map {
+    width: 100%;
+  }
+
+  #loginh4 {
+    white-space: nowrap;
+  }
+
+  .Col65 {
+    width: 100%;
+  }
+
+  #loginhr {
+    width: 400px;
+  }
+
+  .main {
+    overflow: auto;
+  }
+
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}

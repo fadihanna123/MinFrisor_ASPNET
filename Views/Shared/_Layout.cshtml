@@ -1,0 +1,93 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />    
+    <title>@ViewData["Title"] - Min Frisör</title>
+    <link rel="stylesheet" href="~/css/main.css" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <div class="logobox"></div>
+        <ul class="desktopmeny">
+            <li>
+                <a asp-controller="Home" asp-action="Index" class="first">Startsida</a>
+            </li>
+            <li>
+                <a asp-controller="Home" asp-action="Prices">Priser</a>
+            </li>
+            <li>
+                <a asp-controller="Bookingssystem" asp-action="Create">Boka tid</a>
+            </li>
+            <li>
+                <a asp-controller="Home" asp-action="Course">Frisörutbildning</a>
+            </li>
+
+            <li>
+                <a asp-controller="Home" asp-action="Contact">Kontakta oss</a>
+            </li>
+
+            <li>
+                <a asp-controller="Home" asp-action="About">Om oss</a>
+            </li>
+
+
+            @if (SignInManager.IsSignedIn(User))
+            {
+
+                <li>
+                    <a asp-controller="Blog" asp-action="Index">Admin</a>
+                </li>
+                <li>
+                    <form class="LogoutForm" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                        <button id="logoutbtn" type="submit">Logga ut</button>
+                    </form>
+                </li>
+
+            }
+            else
+            {
+
+                <li>
+                    <a asp-area="Identity" asp-page="/Account/Login">Logga in</a>
+                </li>
+                <li>
+                    <a asp-area="Identity" asp-page="/Account/Register">Registrera dig</a>
+                </li>
+
+             }
+
+            </ul>
+
+        <br />
+        <div class="Main">
+            <div class="row">
+                <div class="Col20">
+                    <img alt="first_image" src="~/img/icon1.png" class="first_image" />
+                </div>
+
+                <div class="center">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright © 2020 Min frisör
+            <br />
+            Adress: Sveavägen 45, Stockholm.
+        </div>
+
+
+
+
+
+        @RenderSection("Scripts", required: false)
+    </div>
+    <script src="~/js/main.js"></script>
+
+</body>
+</html>
