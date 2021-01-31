@@ -100,6 +100,7 @@ ScaffoldingReadMe.txt <br />
 Startup.cs <br />
 appsettings.Development.json <br />
 appsettings.json <br />
+aspnet.PNG <br />
 
 ## 1.3 Installation <br>
 
