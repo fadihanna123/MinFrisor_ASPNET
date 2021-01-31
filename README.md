@@ -116,4 +116,4 @@ ASPNET.CORE
 
 ## 1.6 Skärmdump av Intränatapplikation <br />
 
-![alt text](https://github.com/fadihanna123/ASPNET_Projekt/blob/master/aspnet.PNG "Screenshot av hemsidan")
+![alt text](https://github.com/fadihanna123/MinFrisor_ASPNET/blob/main/aspnet.PNG "Screenshot av hemsidan")
