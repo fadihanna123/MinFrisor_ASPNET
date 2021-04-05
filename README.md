@@ -27,9 +27,9 @@ Areas/Identity/ <br />
 Areas/Identity/Pages/ <br />
 Areas/Identity/Pages/Error.cshtml <br />
 Areas/Identity/Pages/Error.cshtml.cs <br />
-Areas/Identity/Pages/\_ValidationScriptsPartial.cshtml <br />
-Areas/Identity/Pages/\_ViewImports.cshtml <br />
-Areas/Identity/Pages/\_ViewStart.cshtml <br />
+Areas/Identity/Pages/_ValidationScriptsPartial.cshtml <br />
+Areas/Identity/Pages/_ViewImports.cshtml <br />
+Areas/Identity/Pages/_ViewStart.cshtml <br />
 Areas/Identity/Pages/Account/ <br />
 Areas/Identity/Pages/Account/Login.cshtml <br />
 Areas/Identity/Pages/Account/Login.cshtml.cs <br />
@@ -37,8 +37,8 @@ Areas/Identity/Pages/Account/Logout.cshtml <br />
 Areas/Identity/Pages/Account/Logout.cshtml.cs <br />
 Areas/Identity/Pages/Account/Register.cshtml <br />
 Areas/Identity/Pages/Account/Register.cshtml.cs <br />
-Areas/Identity/Pages/Account/\_StatusMessage.cshtml <br />
-Areas/Identity/Pages/Account/\_ViewImports.cshtml <br />
+Areas/Identity/Pages/Account/_StatusMessage.cshtml <br />
+Areas/Identity/Pages/Account/_ViewImports.cshtml <br />
 Controllers/ <br />
 Controllers/BlogController.cs <br />
 Controllers/BookingssystemController.cs <br />
@@ -61,8 +61,8 @@ Models/ErrorViewModel.cs <br />
 Properties/ <br />
 Properties/launchSettings.json <br />
 Views/ <br />
-Views/\_ViewImports.cshtml <br />
-Views/\_ViewStart.cshtml <br />
+Views/_ViewImports.cshtml <br />
+Views/_ViewStart.cshtml <br />
 Views/Blog/ <br />
 Views/Blog/Create.cshtml <br />
 Views/Blog/Delete.cshtml <br />
@@ -79,12 +79,40 @@ Views/Blog/Home/Index.cshtml <br />
 Views/Blog/Home/Prices.cshtml <br />
 Views/Shared/ <br />
 Views/Shared/Error.cshtml <br />
-Views/Shared/\_Layout.cshtml <br />
-Views/Shared/\_LoginPartial.cshtml <br />
-Views/Shared/\_ValidationScriptsPartial.cshtml <br />
+Views/Shared/_Layout.cshtml <br />
+Views/Shared/_LoginPartial.cshtml <br />
+Views/Shared/_ValidationScriptsPartial.cshtml <br />
 wwwroot/ <br />
 wwwroot/css/ <br />
-wwwroot/css/main.css <br />
+wwwroot/css/_main.css <br />
+wwwroot/css/_main.min.css <br />
+wwwroot/sass/ <br />
+wwwroot/sass/abstracts/ <br />
+wwwroot/sass/abstracts/_variables.scss <br />
+wwwroot/sass/abstracts/all.scss <br />
+wwwroot/sass/components/ <br />
+wwwroot/sass/components/_card.scss <br />
+wwwroot/sass/components/_forms.scss <br />
+wwwroot/sass/components/_headings.scss <br />
+wwwroot/sass/components/_images.scss <br />
+wwwroot/sass/components/_lines.scss <br />
+wwwroot/sass/components/_links.scss <br />
+wwwroot/sass/components/_tables.scss <br />
+wwwroot/sass/components/all.scss <br />
+wwwroot/sass/core/ <br />
+wwwroot/sass/core/_reset.scss <br />
+wwwroot/sass/core/all.scss <br />
+wwwroot/sass/layout/_footer.scss <br />
+wwwroot/sass/layout/_header.scss <br />
+wwwroot/sass/layout/_navigation.scss <br />
+wwwroot/sass/layout/_other.scss <br />
+wwwroot/sass/layout/all.scss <br />
+wwwroot/sass/pages/ <br />
+wwwroot/sass/pages/_about.scss <br />
+wwwroot/sass/pages/_contact.scss <br />
+wwwroot/sass/pages/_courses.scss <br />
+wwwroot/sass/pages/all.scss <br />
+wwwroot/sass/_main.scss <br />
 wwwroot/img/ <br />
 wwwroot/img/Icon2.jpg <br />
 wwwroot/img/icon1.png <br />
@@ -108,7 +136,7 @@ Du kan ladda ner alla dessa filer och installera källkodsfiler i din lokala ser
 
 ## 1.4 Programmeringsspråk som används i projektet: <br />
 
-C#, HTML, CSS och Javascript. <br />
+C#, HTML, CSS, Sass och Javascript. <br />
 
 ## 1.5 Ramverk: <br />
 
