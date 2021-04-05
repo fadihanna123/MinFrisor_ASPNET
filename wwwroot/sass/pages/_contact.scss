@@ -1,0 +1,9 @@
+#{map-get($selectorMap, contactTxt)} {
+  font-size: $twentypx;
+}
+
+@media screen and (max-width: $media) {
+  #{map-get($selectorMap, contactTxt)} {
+    text-align: $cntr;
+  }
+}

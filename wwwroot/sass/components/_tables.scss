@@ -1,0 +1,46 @@
+#{map-get($selectorMap, prices)} {
+  #{map-get($selectorMap, table)},
+  #{map-get($selectorMap, th)},
+  #{map-get($selectorMap, tr)},
+  #{map-get($selectorMap, td)} {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  margin: $zero $auto;
+  margin-left: $twentypx;
+  margin-bottom: $ten;
+}
+
+#{map-get($selectorMap, table)} {
+  td {
+    padding: $ten;
+    &:hover {
+      background: #f7f7f7;
+    }
+  }
+  th {
+    background: #292b2c;
+    color: #f7f7f7;
+    padding: $ten;
+  }
+  width: $hundred;
+}
+
+@media screen and (max-width: $media) {
+  #{map-get($selectorMap, table)} {
+    td {
+      padding: 0;
+    }
+  }
+
+  #{map-get($selectorMap, prices)} {
+    width: $fourhundredpx;
+  }
+
+  #{map-get($selectorMap, bookTable)} {
+    width: $ten;
+    height: $sixhundredpx;
+    position: $rel;
+    right: $twentypx;
+  }
+}

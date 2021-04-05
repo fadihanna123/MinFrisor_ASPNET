@@ -1,0 +1,175 @@
+#{map-get($selectorMap, deleteForm)},
+#{map-get($selectorMap, createPostForm)},
+#{map-get($selectorMap, contactForm)},
+#{map-get($selectorMap, registerForm)},
+#{map-get($selectorMap, editForm)},
+#{map-get($selectorMap, bookForm)} {
+  padding: $ten;
+}
+
+#{map-get($selectorMap, createPostRow)},
+#{map-get($selectorMap, registerRow)},
+#{map-get($selectorMap, editRow)} {
+  display: $webflex;
+  display: $msflex;
+  display: $flex;
+  margin-bottom: $twentypx;
+}
+
+#{map-get($selectorMap, contactBtn)},
+#{map-get($selectorMap, editBtn)},
+#{map-get($selectorMap, createPostBtn)},
+#{map-get($selectorMap, LoginBtn)},
+#{map-get($selectorMap, registerBtn)},
+#{map-get($selectorMap, bookBtn)} {
+  background-color: #0275d8;
+  margin-left: $auto;
+  margin-right: $auto;
+  display: $block;
+  color: #f7f7f7;
+  padding: $ten;
+  cursor: $pointer;
+}
+
+#{map-get($selectorMap, deleteBtn)} {
+  background-color: #d9534f;
+  margin-left: $auto;
+  margin-right: $auto;
+  display: $block;
+  color: #f7f7f7;
+  padding: $ten;
+  cursor: $pointer;
+}
+
+#{map-get($selectorMap, bookBtn)} {
+  &:hover {
+    color: #292b2c;
+  }
+}
+
+#{map-get($selectorMap, editBtn)} {
+  &:hover {
+    color: #292b2c;
+  }
+}
+
+#{map-get($selectorMap, createPostBtn)} {
+  &:hover {
+    color: #292b2c;
+  }
+}
+
+#{map-get($selectorMap, loginBtn)} {
+  &:hover {
+    color: #292b2c;
+  }
+}
+
+#{map-get($selectorMap, registerBtn)} {
+  &:hover {
+    color: #292b2c;
+  }
+}
+
+#{map-get($selectorMap, contactBtn)} {
+  &:hover {
+    color: #292b2c;
+  }
+}
+
+#{map-get($selectorMap, logoutBtn)} {
+  &:hover {
+    color: #292b2c;
+  }
+}
+
+#{map-get($selectorMap, contactRow)},
+#{map-get($selectorMap, loginRow)},
+#{map-get($selectorMap, bookRow)} {
+  display: $webflex;
+  display: $msflex;
+  display: $flex;
+  margin-bottom: $fiveteenpx;
+}
+
+#{map-get($selectorMap, input)},
+#{map-get($selectorMap, txtArea)},
+#{map-get($selectorMap, selectArea)} {
+  display: $block;
+  width: $hundred;
+  min-height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: $onerem;
+  font-weight: $fourhundred;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: $paddingBox;
+  border: $onepx $solidbrd #ced4da;
+  -webkit-appearance: $none;
+  -moz-appearance: $none;
+  border-radius: 0.25rem;
+  -webkit-transition: $borderColor 0.15s $easeInOut, $webshadow 0.15s $easeInOut;
+  transition: $borderColor 0.15s $easeInOut, $webshadow 0.15s $easeInOut;
+  -o-transition: $borderColor 0.15s $easeInOut, $webshadow 0.15s $easeInOut;
+  -webkit-transition: $borderColor 0.15s $easeInOut, $webshadow 0.15s $easeInOut;
+  transition: $borderColor 0.15s $easeInOut, $webshadow 0.15s $easeInOut;
+  transition: $borderColor 0.15s $easeInOut, $webshadow 0.15s $easeInOut;
+  transition: $borderColor 0.15s $easeInOut, $webshadow 0.15s $easeInOut;
+  transition: $borderColor 0.15s $easeInOut, $webshadow 0.15s $easeInOut;
+  margin-bottom: $ten;
+}
+
+#{map-get($selectorMap, logoutForm)} {
+  margin-left: $ten;
+}
+
+#{map-get($selectorMap, bookBtn)} {
+  margin-left: $onehundredfiftypx;
+}
+
+#{map-get($selectorMap, logoutBtn)} {
+  background-color: #d9534f;
+  color: #f7f7f7;
+  padding: $ten;
+  margin-top: $onepx;
+  margin-bottom: $sixpx;
+}
+
+#{map-get($selectorMap, input)} :hover,
+#{map-get($selectorMap, txtArea)} :hover {
+  border-color: #0275d8;
+  -webkit-box-shadow: $zero $onepx $onepx rgba($zero, $zero, $zero, 0.075)
+      $insetbrd,
+    $zero $zero $eightpx $lightblueclr;
+  box-shadow: $zero $onepx $onepx rgba($zero, $zero, $zero, 0.075) $insetbrd,
+    $zero $zero $eightpx $lightblueclr;
+  outline: $zero $none;
+}
+
+#{map-get($selectorMap, label)} {
+  font-weight: $bold;
+  white-space: $dntwrap;
+}
+
+#{map-get($selectorMap, accountForm)} {
+  padding: $ten;
+}
+
+@media screen and (max-width: $media) {
+  #{map-get($selectorMap, loginRow)},
+  #{map-get($selectorMap, createPostRow)},
+  #{map-get($selectorMap, registerRow)},
+  #{map-get($selectorMap, editRow)},
+  #{map-get($selectorMap, contactRow)},
+  #{map-get($selectorMap, bookRow)} {
+    -webkit-box-orient: $vertical;
+    -webkit-box-direction: $normal;
+    -ms-flex-direction: $col;
+    flex-direction: $col;
+  }
+
+  #{map-get($selectorMap, fullnameLabel)} {
+    white-space: $dntwrap;
+  }
+}

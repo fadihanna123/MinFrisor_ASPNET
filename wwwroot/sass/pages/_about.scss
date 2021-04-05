@@ -1,0 +1,13 @@
+#{map-get($selectorMap, aboutTxt)} {
+  font-size: $twentypx;
+}
+
+@media screen and (max-width: $media) {
+  #{map-get($selectorMap, aboutTxt)} {
+    text-align: $cntr;
+  }
+
+  #{map-get($selectorMap, map)} {
+    width: $hundred;
+  }
+}

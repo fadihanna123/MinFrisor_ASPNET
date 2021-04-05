@@ -1,0 +1,6 @@
+@media screen and (max-width: $media) {
+  #{map-get($selectorMap, bookLine)},
+  #{map-get($selectorMap, loginLine4)} {
+    width: $fourhundredpx;
+  }
+}

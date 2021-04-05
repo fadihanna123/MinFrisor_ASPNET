@@ -1,0 +1,150 @@
+// Variables
+$ten: 10px;
+$onepx: 1px;
+$none: none;
+$font: Cambria, Georgia;
+$hundred: 100%;
+$auto: auto;
+$box: border-box;
+$zero: 0;
+$onethousandfourhundredpx: 1400px;
+$hid: hidden;
+$fourpx: 4px;
+$eightpx: 8px;
+$twopx: 2px;
+$sixteenpx: 16px;
+$twentytwopx: 22px;
+$twoem: 2em;
+$webflex: -webkit-box;
+$msflex: -ms-flexbox;
+$flex: flex;
+$twentypx: 20px;
+$dntrepeat: no-repeat;
+$threehundredtwentypx: 320px;
+$leftpos: left;
+$twentypr: 20%;
+$thirtypr: 30%;
+$thirtyfivepr: 35%;
+$seventypr: 70%;
+$twohundredfivetypx: 250px;
+$cntr: center;
+$italic: italic;
+$fiveteenpx: 15px;
+$solidbrd: solid;
+$onepx: 1px;
+$block: block;
+$pointer: pointer;
+$onerem: 1rem;
+$fourhundred: 400;
+$paddingBox: padding-box;
+$easeInOut: ease-in-out;
+$webshadow: -webkit-box-shadow;
+$twentyfivepr: 25%;
+$sixtyfivepr: 65%;
+$fortyfivepx: 45px;
+$horizontal: horizontal;
+$row: row;
+$fourteenpx: 14px;
+$inblock: inline-block;
+$onehundredfiftypx: 150px;
+$collapse: collapse;
+$sixpx: 6px;
+$insetbrd: inset;
+$lightblueclr: lightblue;
+$bold: bold;
+$fiftypr: 50%;
+$media: 1900px;
+$vertical: vertical;
+$normal: normal;
+$col: column;
+$fourhundredpx: 400px;
+$ninetypr: 95%;
+$fivehundredpx: 500px;
+$threehundredfiftypx: 350px;
+$dntwrap: nowrap;
+$twentyfivepx: 25px;
+$rel: relative;
+$sixhundredpx: 600px;
+$borderColor: border-color;
+$blackclr: black;
+$ninetyfivepr: 95%;
+
+// Selectors
+$selectorMap: (
+  global: "*",
+  globalImg: "img",
+  body: "body",
+  para: "p",
+  globalLink: "a",
+  link: ".link",
+  globalTable: "table",
+  table: ".table",
+  first: ".first",
+  th: "th",
+  td: "td",
+  tr: "tr",
+  wrapper: "#container",
+  card: ".card",
+  deleteForm: ".DeleteForm",
+  createPostForm: ".CreatePostForm",
+  createPostRow: ".CreatePostRow",
+  logoBox: ".logobox",
+  left: ".left",
+  Col20: ".Col20",
+  Col25: ".Col25",
+  Col30: ".Col30",
+  Col35: ".Col35",
+  Col40: ".Col40",
+  Col50: ".Col50",
+  Col65: ".Col65",
+  center: ".center",
+  bookHeading1: ".bokah1",
+  bookLine: ".bokahr",
+  firstImage: ".first_image",
+  secondImage: ".second_image",
+  footer: ".footer",
+  row: ".row",
+  contactForm: ".ContactForm",
+  registerForm: ".RegisterForm",
+  registerRow: ".RegisterRow",
+  editRow: ".EditRow",
+  contactBtn: ".ContactBtn",
+  contactTxt: ".contacttxt",
+  deleteBtn: ".DeleteBtn",
+  editBtn: ".EditBtn",
+  createPostBtn: ".CreatePostBtn",
+  loginBtn: ".loginBtn",
+  registerBtn: ".RegisterBtn",
+  bookBtn: ".BookBtn",
+  bookForm: ".BookForm",
+  label: ".label",
+  aboutTxt: ".abouttxt",
+  accountForm: "#accountForm",
+  mb: ".mb",
+  bookBtn2: "#Bookbtn",
+  logoutBtn: "#logoutbtn",
+  contactRow: ".ContactRow",
+  loginRow: ".LoginRow",
+  warning: ".warning",
+  bookRow: ".BookRow",
+  editForm: ".EditForm",
+  input: ".input",
+  txtArea: ".txtarea",
+  selectArea: ".selectarea",
+  desktopMeny: ".desktopmeny",
+  logoutForm: ".LogoutForm",
+  prices: ".prices",
+  Main: ".Main",
+  main: ".main",
+  fullnameLabel: ".fullnamelabel",
+  utbildaHeading1: ".utbildah1",
+  courseTxt: ".coursetxt",
+  thanksHeading1: ".tackh1",
+  muh2: ".muh2",
+  confirmTxt: ".confirmtxt",
+  bookTable: ".bookTable",
+  vemHeading1: "#vemh1",
+  map: "#map",
+  loginHeading4: "#loginh4",
+  loginLine: "#loginhr",
+);

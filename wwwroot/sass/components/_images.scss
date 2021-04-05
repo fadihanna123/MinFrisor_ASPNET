@@ -1,0 +1,11 @@
+#{map-get($selectorMap, firstImage)} {
+  width: $twohundredfivetypx;
+  height: twohundredfivetypx;
+  margin: $ten $ten;
+}
+
+#{map-get($selectorMap, secondImage)} {
+  width: $twohundredfivetypx;
+  height: $twohundredfivetypx;
+  margin: $ten $ten;
+}

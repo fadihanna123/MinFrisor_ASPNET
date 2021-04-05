@@ -1,0 +1,118 @@
+#{map-get($selectorMap, wrapper)} {
+  font-family: $font;
+  width: $onethousandfourhundredpx;
+  margin: $zero $auto;
+  background: #bdedff;
+  overflow: $hid;
+}
+
+#{map-get($selectorMap, left)} {
+  float: $leftpos;
+  padding: $ten;
+}
+
+#{map-get($selectorMap, Col20)} {
+  width: $twentypr;
+}
+
+#{map-get($selectorMap, Col30)} {
+  width: $thirtypr;
+}
+
+#{map-get($selectorMap, Col35)} {
+  width: $thirtyfivepr;
+}
+
+#{map-get($selectorMap, center)} {
+  float: $leftpos;
+  width: $seventypr;
+  margin: $ten;
+  #{map-get($selectorMap, para)} {
+    font-size: $twentypx;
+  }
+}
+
+#{map-get($selectorMap, row)} {
+  margin: $zero $ten $zero $ten;
+  border-radius: $fiveteenpx;
+  background: #addfff;
+  display: $webflex;
+  display: $msflex;
+  display: $flex;
+  border: $onepx $solidbrd #292b2c;
+  overflow: $hid;
+}
+
+#{map-get($selectorMap, warning)} {
+  color: #d9534f;
+}
+
+#{map-get($selectorMap, Col25)} {
+  width: $twentyfivepr;
+}
+
+#{map-get($selectorMap, Col65)} {
+  width: $sixtyfivepr;
+}
+
+#{map-get($selectorMap, first)} {
+  border-left: $onepx $solidbrd #000;
+}
+
+#{map-get($selectorMap, Main)} {
+  margin: $ten;
+}
+
+#{map-get($selectorMap, Col50)} {
+  width: $fiftypr;
+}
+
+#{map-get($selectorMap, mb)} {
+  margin-bottom: $twentypx;
+}
+
+@media screen and (max-width: $media) {
+  #{map-get($selectorMap, wrapper)} {
+    width: $hundred;
+    margin: $zero;
+    font-size: $sixteenpx;
+    overflow: $hid;
+  }
+
+  #{map-get($selectorMap, Col25)},
+  #{map-get($selectorMap, Col30)},
+  #{map-get($selectorMap, Col35)},
+  #{map-get($selectorMap, Col40)},
+  #{map-get($selectorMap, Col50)},
+  #{map-get($selectorMap, Col65)} {
+    width: $hundred;
+  }
+
+  #{map-get($selectorMap, center)} {
+    width: $ninetyfivepr;
+    text-align: $cntr;
+    margin: $ten;
+  }
+
+  #{map-get($selectorMap, Col20)} {
+    width: $hundred;
+    text-align: $cntr;
+  }
+
+  #{map-get($selectorMap, confirmTxt)} {
+    margin-left: $ten;
+    width: $fourhundredpx;
+    font-size: $ten;
+  }
+
+  #{map-get($selectorMap, main)} {
+    overflow: $auto;
+  }
+
+  #{map-get($selectorMap, row)} {
+    -webkit-box-orient: $vertical;
+    -webkit-box-direction: $normal;
+    -ms-flex-direction: $col;
+    flex-direction: $col;
+  }
+}
