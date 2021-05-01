@@ -1,73 +1,31 @@
 // Variables
-$ten: 10px;
-$onepx: 1px;
 $none: none;
-$font: Cambria, Georgia;
-$hundred: 100%;
 $auto: auto;
 $box: border-box;
-$zero: 0;
-$onethousandfourhundredpx: 1400px;
 $hid: hidden;
-$fourpx: 4px;
-$eightpx: 8px;
-$twopx: 2px;
-$sixteenpx: 16px;
-$twentytwopx: 22px;
-$twoem: 2em;
 $webflex: -webkit-box;
 $msflex: -ms-flexbox;
 $flex: flex;
-$twentypx: 20px;
 $dntrepeat: no-repeat;
-$threehundredtwentypx: 320px;
 $leftpos: left;
-$twentypr: 20%;
-$thirtypr: 30%;
-$thirtyfivepr: 35%;
-$seventypr: 70%;
-$twohundredfivetypx: 250px;
 $cntr: center;
-$italic: italic;
-$fiveteenpx: 15px;
 $solidbrd: solid;
-$onepx: 1px;
 $block: block;
 $pointer: pointer;
-$onerem: 1rem;
-$fourhundred: 400;
-$paddingBox: padding-box;
 $easeInOut: ease-in-out;
 $webshadow: -webkit-box-shadow;
-$twentyfivepr: 25%;
-$sixtyfivepr: 65%;
-$fortyfivepx: 45px;
-$horizontal: horizontal;
 $row: row;
-$fourteenpx: 14px;
 $inblock: inline-block;
-$onehundredfiftypx: 150px;
-$collapse: collapse;
-$sixpx: 6px;
 $insetbrd: inset;
-$lightblueclr: lightblue;
-$bold: bold;
-$fiftypr: 50%;
-$media: 1900px;
+$colors: (
+  lightblue: #add8e6,
+  black: #000,
+);
 $vertical: vertical;
 $normal: normal;
 $col: column;
-$fourhundredpx: 400px;
-$ninetypr: 95%;
-$fivehundredpx: 500px;
-$threehundredfiftypx: 350px;
 $dntwrap: nowrap;
-$twentyfivepx: 25px;
-$rel: relative;
-$sixhundredpx: 600px;
 $borderColor: border-color;
-$blackclr: black;
-$ninetyfivepr: 95%;
 
 // Selectors
 $selectorMap: (
@@ -148,3 +106,8 @@ $selectorMap: (
   loginHeading4: "#loginh4",
   loginLine: "#loginhr",
 );
+
+// Functions
+@function color($val) {
+  @return map-get($colors, $val);
+}

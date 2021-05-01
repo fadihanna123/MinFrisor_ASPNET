@@ -4,7 +4,7 @@
 #{map-get($selectorMap, registerForm)},
 #{map-get($selectorMap, editForm)},
 #{map-get($selectorMap, bookForm)} {
-  padding: $ten;
+  padding: 10px;
 }
 
 #{map-get($selectorMap, createPostRow)},
@@ -13,7 +13,7 @@
   display: $webflex;
   display: $msflex;
   display: $flex;
-  margin-bottom: $twentypx;
+  margin-bottom: 20px;
 }
 
 #{map-get($selectorMap, contactBtn)},
@@ -27,7 +27,7 @@
   margin-right: $auto;
   display: $block;
   color: #f7f7f7;
-  padding: $ten;
+  padding: 10px;
   cursor: $pointer;
 }
 
@@ -37,7 +37,7 @@
   margin-right: $auto;
   display: $block;
   color: #f7f7f7;
-  padding: $ten;
+  padding: 10px;
   cursor: $pointer;
 }
 
@@ -89,23 +89,23 @@
   display: $webflex;
   display: $msflex;
   display: $flex;
-  margin-bottom: $fiveteenpx;
+  margin-bottom: 15px;
 }
 
 #{map-get($selectorMap, input)},
 #{map-get($selectorMap, txtArea)},
 #{map-get($selectorMap, selectArea)} {
   display: $block;
-  width: $hundred;
+  width: 100%;
   min-height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
-  font-size: $onerem;
-  font-weight: $fourhundred;
+  font-size: 1rem;
+  font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
-  background-clip: $paddingBox;
-  border: $onepx $solidbrd #ced4da;
+  background-color: color(white);
+  background-clip: padding-box;
+  border: 1px $solidbrd #ced4da;
   -webkit-appearance: $none;
   -moz-appearance: $none;
   border-radius: 0.25rem;
@@ -117,46 +117,44 @@
   transition: $borderColor 0.15s $easeInOut, $webshadow 0.15s $easeInOut;
   transition: $borderColor 0.15s $easeInOut, $webshadow 0.15s $easeInOut;
   transition: $borderColor 0.15s $easeInOut, $webshadow 0.15s $easeInOut;
-  margin-bottom: $ten;
+  margin-bottom: 10px;
 }
 
 #{map-get($selectorMap, logoutForm)} {
-  margin-left: $ten;
+  margin-left: 10px;
 }
 
 #{map-get($selectorMap, bookBtn)} {
-  margin-left: $onehundredfiftypx;
+  margin-left: 150px;
 }
 
 #{map-get($selectorMap, logoutBtn)} {
   background-color: #d9534f;
   color: #f7f7f7;
-  padding: $ten;
-  margin-top: $onepx;
-  margin-bottom: $sixpx;
+  padding: 10px;
+  margin-top: 1px;
+  margin-bottom: 6px;
 }
 
 #{map-get($selectorMap, input)} :hover,
 #{map-get($selectorMap, txtArea)} :hover {
   border-color: #0275d8;
-  -webkit-box-shadow: $zero $onepx $onepx rgba($zero, $zero, $zero, 0.075)
-      $insetbrd,
-    $zero $zero $eightpx $lightblueclr;
-  box-shadow: $zero $onepx $onepx rgba($zero, $zero, $zero, 0.075) $insetbrd,
-    $zero $zero $eightpx $lightblueclr;
-  outline: $zero $none;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) $insetbrd,
+    0 0 8px color(lightblue);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) $insetbrd, 0 0 8px color(lightblue);
+  outline: 0 $none;
 }
 
 #{map-get($selectorMap, label)} {
-  font-weight: $bold;
+  font-weight:bold;
   white-space: $dntwrap;
 }
 
 #{map-get($selectorMap, accountForm)} {
-  padding: $ten;
+  padding: 10px;
 }
 
-@media screen and (max-width: $media) {
+@media screen and (max-width: 1900px) {
   #{map-get($selectorMap, loginRow)},
   #{map-get($selectorMap, createPostRow)},
   #{map-get($selectorMap, registerRow)},

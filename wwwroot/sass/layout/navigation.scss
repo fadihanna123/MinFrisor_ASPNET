@@ -1,18 +1,19 @@
 #{map-get($selectorMap, desktopMeny)} {
   #{map-get($selectorMap, globalLink)} {
-    font-size: $fourteenpx;
-    border-right: $onepx $solidbrd #000;
+    font-size: 14px;
+    border-right: 1px $solidbrd color(black);
     text-decoration: $none;
     display: $inblock;
     color: #d9534f;
-    padding: $ten;
+    padding: 10px;
+
     &:hover {
       background: #add8e6;
     }
   }
-  border-radius: $fiveteenpx;
-  margin: $zero $ten $zero $ten;
-  max-height: $fortyfivepx;
+  border-radius: 15px;
+  margin: 0 10px 0 10px;
+  max-height: 45px;
   text-align: $cntr;
   display: $webflex;
   display: $msflex;
@@ -20,24 +21,25 @@
   -webkit-box-pack: $cntr;
   -ms-flex-pack: $cntr;
   justify-content: $cntr;
-  border: $onepx $solidbrd $blackclr;
-  -webkit-box-orient: $horizontal;
+  border: 1px $solidbrd color(black);
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: $normal;
   -ms-flex-direction: $row;
   flex-direction: $row;
   list-style: $none;
 }
 
-@media screen and (max-width: $media) {
+@media screen and (max-width: 1900px) {
   #{map-get($selectorMap, desktopMeny)} {
-    #{map-get($selectorMap, globalLink)} {
-      border: $none;
-    }
-    max-height: $fivehundredpx;
-    height: $threehundredfiftypx;
+    max-height: 500px;
+    height: 350px;
     -webkit-box-orient: $vertical;
     -webkit-box-direction: $normal;
     -ms-flex-direction: $col;
     flex-direction: $col;
+
+    #{map-get($selectorMap, globalLink)} {
+      border: $none;
+    }
   }
 }

@@ -1,45 +1,46 @@
 #{map-get($selectorMap, wrapper)} {
-  font-family: $font;
-  width: $onethousandfourhundredpx;
-  margin: $zero $auto;
+  font-family: Cambria, Georgia;
+  width: 1400px;
+  margin: 0 $auto;
   background: #bdedff;
   overflow: $hid;
 }
 
 #{map-get($selectorMap, left)} {
   float: $leftpos;
-  padding: $ten;
+  padding: 10px;
 }
 
 #{map-get($selectorMap, Col20)} {
-  width: $twentypr;
+  width: 20%;
 }
 
 #{map-get($selectorMap, Col30)} {
-  width: $thirtypr;
+  width: 30%;
 }
 
 #{map-get($selectorMap, Col35)} {
-  width: $thirtyfivepr;
+  width: 35%;
 }
 
 #{map-get($selectorMap, center)} {
   float: $leftpos;
-  width: $seventypr;
-  margin: $ten;
+  width: 70%;
+  margin: 10px;
+
   #{map-get($selectorMap, para)} {
-    font-size: $twentypx;
+    font-size: 20px;
   }
 }
 
 #{map-get($selectorMap, row)} {
-  margin: $zero $ten $zero $ten;
-  border-radius: $fiveteenpx;
+  margin: 0 10px 0 10px;
+  border-radius: 15px;
   background: #addfff;
   display: $webflex;
   display: $msflex;
   display: $flex;
-  border: $onepx $solidbrd #292b2c;
+  border: 1px $solidbrd #292b2c;
   overflow: $hid;
 }
 
@@ -48,34 +49,34 @@
 }
 
 #{map-get($selectorMap, Col25)} {
-  width: $twentyfivepr;
+  width: 25%;
 }
 
 #{map-get($selectorMap, Col65)} {
-  width: $sixtyfivepr;
+  width: 65%;
 }
 
 #{map-get($selectorMap, first)} {
-  border-left: $onepx $solidbrd #000;
+  border-left: 1px $solidbrd color(black);
 }
 
 #{map-get($selectorMap, Main)} {
-  margin: $ten;
+  margin: 10px;
 }
 
 #{map-get($selectorMap, Col50)} {
-  width: $fiftypr;
+  width: 50%;
 }
 
 #{map-get($selectorMap, mb)} {
-  margin-bottom: $twentypx;
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width: $media) {
+@media screen and (max-width: 1900px) {
   #{map-get($selectorMap, wrapper)} {
-    width: $hundred;
-    margin: $zero;
-    font-size: $sixteenpx;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
     overflow: $hid;
   }
 
@@ -85,24 +86,24 @@
   #{map-get($selectorMap, Col40)},
   #{map-get($selectorMap, Col50)},
   #{map-get($selectorMap, Col65)} {
-    width: $hundred;
+    width: 100%;
   }
 
   #{map-get($selectorMap, center)} {
-    width: $ninetyfivepr;
+    width: 95%;
     text-align: $cntr;
-    margin: $ten;
+    margin: 10px;
   }
 
   #{map-get($selectorMap, Col20)} {
-    width: $hundred;
+    width: 100%;
     text-align: $cntr;
   }
 
   #{map-get($selectorMap, confirmTxt)} {
-    margin-left: $ten;
-    width: $fourhundredpx;
-    font-size: $ten;
+    margin-left: 10px;
+    width: 400px;
+    font-size: 10px;
   }
 
   #{map-get($selectorMap, main)} {

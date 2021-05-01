@@ -1,14 +1,14 @@
 #{map-get($selectorMap, logoBox)} {
   background: url(../img/logo.jpg) $dntrepeat $cntr $cntr;
-  height: $threehundredtwentypx;
-  margin: $ten;
+  height: 320px;
+  margin: 10px;
 }
 
-@media screen and (max-width: $media) {
+@media screen and (max-width: 1900px) {
   #{map-get($selectorMap, logoBox)} {
     background-repeat: $dntrepeat;
-    background-size: $hundred $fiftypr;
+    background-size: 100% 50%;
     background-position: $cntr;
-    margin: $ten $ten $zero $ten;
+    margin: 10px 10px 0 10px;
   }
 }

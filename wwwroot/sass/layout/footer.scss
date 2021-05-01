@@ -1,0 +1,14 @@
+#{map-get($selectorMap, footer)} {
+  font-size: 20px;
+  text-align: $cntr;
+  margin: 10px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1900px) {
+  #{map-get($selectorMap, footer)} {
+    display: $inblock;
+    width: 500px;
+    font-size: 20px;
+  }
+}

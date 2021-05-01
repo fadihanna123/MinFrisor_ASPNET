@@ -63,7 +63,7 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid #000;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -215,7 +215,7 @@ img {
 }
 .card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px   8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px  8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -319,7 +319,6 @@ img {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -355,8 +354,8 @@ img {
 .input :hover,
 .txtarea :hover {
   border-color: #0275d8;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #add8e6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #add8e6;
   outline: 0 none;
 }
 
@@ -408,7 +407,7 @@ img {
 }
 .first_image {
   width: 250px;
-  height: twohundredfivetypx;
+  height: 250px;
   margin: 10px 10px;
 }
 
@@ -432,15 +431,13 @@ img {
 .prices th,
 .prices tr,
 .prices td {
-  border: 1px solid black;
+  border: 1px solid #000;
   border-collapse: collapse;
 }
 
-.table {
-  width: 100%;
-}
 .table td {
   padding: 10px;
+  width: 100%;
 }
 .table td:hover {
   background: #f7f7f7;

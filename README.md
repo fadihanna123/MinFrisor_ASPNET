@@ -84,35 +84,35 @@ Views/Shared/_LoginPartial.cshtml <br />
 Views/Shared/_ValidationScriptsPartial.cshtml <br />
 wwwroot/ <br />
 wwwroot/css/ <br />
-wwwroot/css/_main.css <br />
-wwwroot/css/_main.min.css <br />
+wwwroot/css/main.css <br />
+wwwroot/css/main.min.css <br />
 wwwroot/sass/ <br />
 wwwroot/sass/abstracts/ <br />
-wwwroot/sass/abstracts/_variables.scss <br />
+wwwroot/sass/abstracts/variables.scss <br />
 wwwroot/sass/abstracts/all.scss <br />
 wwwroot/sass/components/ <br />
-wwwroot/sass/components/_card.scss <br />
-wwwroot/sass/components/_forms.scss <br />
-wwwroot/sass/components/_headings.scss <br />
-wwwroot/sass/components/_images.scss <br />
-wwwroot/sass/components/_lines.scss <br />
-wwwroot/sass/components/_links.scss <br />
-wwwroot/sass/components/_tables.scss <br />
+wwwroot/sass/components/cards.scss <br />
+wwwroot/sass/components/forms.scss <br />
+wwwroot/sass/components/headings.scss <br />
+wwwroot/sass/components/images.scss <br />
+wwwroot/sass/components/lines.scss <br />
+wwwroot/sass/components/links.scss <br />
+wwwroot/sass/components/tables.scss <br />
 wwwroot/sass/components/all.scss <br />
 wwwroot/sass/core/ <br />
-wwwroot/sass/core/_reset.scss <br />
+wwwroot/sass/core/reset.scss <br />
 wwwroot/sass/core/all.scss <br />
-wwwroot/sass/layout/_footer.scss <br />
-wwwroot/sass/layout/_header.scss <br />
-wwwroot/sass/layout/_navigation.scss <br />
-wwwroot/sass/layout/_other.scss <br />
+wwwroot/sass/layout/footer.scss <br />
+wwwroot/sass/layout/header.scss <br />
+wwwroot/sass/layout/navigation.scss <br />
+wwwroot/sass/layout/other.scss <br />
 wwwroot/sass/layout/all.scss <br />
 wwwroot/sass/pages/ <br />
-wwwroot/sass/pages/_about.scss <br />
-wwwroot/sass/pages/_contact.scss <br />
-wwwroot/sass/pages/_courses.scss <br />
+wwwroot/sass/pages/about.scss <br />
+wwwroot/sass/pages/contact.scss <br />
+wwwroot/sass/pages/courses.scss <br />
 wwwroot/sass/pages/all.scss <br />
-wwwroot/sass/_main.scss <br />
+wwwroot/sass/main.scss <br />
 wwwroot/img/ <br />
 wwwroot/img/Icon2.jpg <br />
 wwwroot/img/icon1.png <br />
@@ -136,7 +136,7 @@ Du kan ladda ner alla dessa filer och installera källkodsfiler i din lokala ser
 
 ## 1.4 Programmeringsspråk som används i projektet: <br />
 
-C#, HTML, CSS, Sass och Javascript. <br />
+C#, HTML, CSS, Sass, Typescript och Javascript. <br />
 
 ## 1.5 Ramverk: <br />
 

@@ -1,46 +1,49 @@
 #{map-get($selectorMap, prices)} {
+  margin: 0 $auto;
+  margin-left: 20px;
+  margin-bottom: 10px;
+
   #{map-get($selectorMap, table)},
   #{map-get($selectorMap, th)},
   #{map-get($selectorMap, tr)},
   #{map-get($selectorMap, td)} {
-    border: 1px solid black;
+    border: 1px solid color(black);
     border-collapse: collapse;
   }
-  margin: $zero $auto;
-  margin-left: $twentypx;
-  margin-bottom: $ten;
 }
 
 #{map-get($selectorMap, table)} {
-  td {
-    padding: $ten;
+  #{map-get($selectorMap, td)} {
+    padding: 10px;
+    width: 100%;
+
     &:hover {
       background: #f7f7f7;
     }
   }
-  th {
+
+  #{map-get($selectorMap, th)} {
     background: #292b2c;
     color: #f7f7f7;
-    padding: $ten;
+    padding: 10px;
   }
-  width: $hundred;
 }
 
-@media screen and (max-width: $media) {
+@media screen and (max-width: 1900px) {
   #{map-get($selectorMap, table)} {
-    td {
+    #{map-get($selectorMap, td)} {
       padding: 0;
     }
   }
 
   #{map-get($selectorMap, prices)} {
-    width: $fourhundredpx;
+    width: 400px;
   }
 
   #{map-get($selectorMap, bookTable)} {
-    width: $ten;
-    height: $sixhundredpx;
-    position: $rel;
-    right: $twentypx;
+    width: 10px;
+    height: 600px;
+    position: relative;
+    right: 20px;
   }
 }
