@@ -1,5 +1,5 @@
-#{map-get($selectorMap, desktopMeny)} {
-  #{map-get($selectorMap, globalLink)} {
+#{selector(desktopMeny)} {
+  #{selector(globalLink)} {
     font-size: 14px;
     border-right: 1px $solidbrd color(black);
     text-decoration: $none;
@@ -30,7 +30,7 @@
 }
 
 @media screen and (max-width: 1900px) {
-  #{map-get($selectorMap, desktopMeny)} {
+  #{selector(desktopMeny)} {
     max-height: 500px;
     height: 350px;
     -webkit-box-orient: $vertical;
@@ -38,7 +38,7 @@
     -ms-flex-direction: $col;
     flex-direction: $col;
 
-    #{map-get($selectorMap, globalLink)} {
+    #{selector(globalLink)} {
       border: $none;
     }
   }

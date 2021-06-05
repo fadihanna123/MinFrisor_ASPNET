@@ -1,39 +1,31 @@
-#{map-get($selectorMap, wrapper)} {
-  font-family: Cambria, Georgia;
-  width: 1400px;
-  margin: 0 $auto;
-  background: #bdedff;
-  overflow: $hid;
-}
-
-#{map-get($selectorMap, left)} {
+#{selector(left)} {
   float: $leftpos;
   padding: 10px;
 }
 
-#{map-get($selectorMap, Col20)} {
+#{selector(Col20)} {
   width: 20%;
 }
 
-#{map-get($selectorMap, Col30)} {
+#{selector(Col30)} {
   width: 30%;
 }
 
-#{map-get($selectorMap, Col35)} {
+#{selector(Col35)} {
   width: 35%;
 }
 
-#{map-get($selectorMap, center)} {
+#{selector(center)} {
   float: $leftpos;
   width: 70%;
   margin: 10px;
 
-  #{map-get($selectorMap, para)} {
+  #{selector(para)} {
     font-size: 20px;
   }
 }
 
-#{map-get($selectorMap, row)} {
+#{selector(row)} {
   margin: 0 10px 0 10px;
   border-radius: 15px;
   background: #addfff;
@@ -44,73 +36,73 @@
   overflow: $hid;
 }
 
-#{map-get($selectorMap, warning)} {
+#{selector(warning)} {
   color: #d9534f;
 }
 
-#{map-get($selectorMap, Col25)} {
+#{selector(Col25)} {
   width: 25%;
 }
 
-#{map-get($selectorMap, Col65)} {
+#{selector(Col65)} {
   width: 65%;
 }
 
-#{map-get($selectorMap, first)} {
+#{selector(first)} {
   border-left: 1px $solidbrd color(black);
 }
 
-#{map-get($selectorMap, Main)} {
+#{selector(Main)} {
   margin: 10px;
 }
 
-#{map-get($selectorMap, Col50)} {
+#{selector(Col50)} {
   width: 50%;
 }
 
-#{map-get($selectorMap, mb)} {
+#{selector(mb)} {
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1900px) {
-  #{map-get($selectorMap, wrapper)} {
+  #{selector(wrapper)} {
     width: 100%;
     margin: 0;
     font-size: 16px;
     overflow: $hid;
   }
 
-  #{map-get($selectorMap, Col25)},
-  #{map-get($selectorMap, Col30)},
-  #{map-get($selectorMap, Col35)},
-  #{map-get($selectorMap, Col40)},
-  #{map-get($selectorMap, Col50)},
-  #{map-get($selectorMap, Col65)} {
+  #{selector(Col25)},
+  #{selector(Col30)},
+  #{selector(Col35)},
+  #{selector(Col40)},
+  #{selector(Col50)},
+  #{selector(Col65)} {
     width: 100%;
   }
 
-  #{map-get($selectorMap, center)} {
+  #{selector(center)} {
     width: 95%;
     text-align: $cntr;
     margin: 10px;
   }
 
-  #{map-get($selectorMap, Col20)} {
+  #{selector(Col20)} {
     width: 100%;
     text-align: $cntr;
   }
 
-  #{map-get($selectorMap, confirmTxt)} {
+  #{selector(confirmTxt)} {
     margin-left: 10px;
     width: 400px;
     font-size: 10px;
   }
 
-  #{map-get($selectorMap, main)} {
+  #{selector(main)} {
     overflow: $auto;
   }
 
-  #{map-get($selectorMap, row)} {
+  #{selector(row)} {
     -webkit-box-orient: $vertical;
     -webkit-box-direction: $normal;
     -ms-flex-direction: $col;

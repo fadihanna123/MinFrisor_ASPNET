@@ -1,19 +1,19 @@
 @media screen and (max-width: 1900px) {
-  #{map-get($selectorMap, bookHeading1)},
-  #{map-get($selectorMap, loginHeading4)} {
+  #{selector(bookHeading1)},
+  #{selector(loginHeading4)} {
     white-space: $dntwrap;
   }
 
-  #{map-get($selectorMap, utbildaHeading1)} {
+  #{selector(utbildaHeading1)} {
     margin-left: 10px;
     white-space: $dntwrap;
     font-size: 25px;
     text-align: $cntr;
   }
 
-  #{map-get($selectorMap, thanksHeading1)},
-  #{map-get($selectorMap, nuHeading2)},
-  #{map-get($selectorMap, vemHeading1)} {
+  #{selector(thanksHeading1)},
+  #{selector(nuHeading2)},
+  #{selector(vemHeading1)} {
     margin-left: 10px;
     white-space: $dntwrap;
     font-size: 25px;

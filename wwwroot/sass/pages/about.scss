@@ -1,13 +1,13 @@
-#{map-get($selectorMap, aboutTxt)} {
+#{selector(aboutTxt)} {
   font-size: 20px;
 }
 
 @media screen and (max-width: 1900px) {
-  #{map-get($selectorMap, aboutTxt)} {
+  #{selector(aboutTxt)} {
     text-align: $cntr;
   }
 
-  #{map-get($selectorMap, map)} {
+  #{selector(map)} {
     width: 100%;
   }
 }

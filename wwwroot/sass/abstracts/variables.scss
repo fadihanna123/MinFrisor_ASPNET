@@ -111,3 +111,7 @@ $selectorMap: (
 @function color($val) {
   @return map-get($colors, $val);
 }
+
+@function selector($slc) {
+  @return map-get($selectorMap, $slc);
+}

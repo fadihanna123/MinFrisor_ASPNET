@@ -1,4 +1,4 @@
-#{map-get($selectorMap, footer)} {
+#{selector(footer)} {
   font-size: 20px;
   text-align: $cntr;
   margin: 10px;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 1900px) {
-  #{map-get($selectorMap, footer)} {
+  #{selector(footer)} {
     display: $inblock;
     width: 500px;
     font-size: 20px;

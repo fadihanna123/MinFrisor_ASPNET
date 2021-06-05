@@ -1,5 +1,5 @@
 @media screen and (max-width: 1900px) {
-  #{map-get($selectorMap, courseTxt)} {
+  #{selector(courseTxt)} {
     font-size: 10px;
     text-align: $cntr;
   }

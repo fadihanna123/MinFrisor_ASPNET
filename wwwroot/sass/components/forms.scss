@@ -1,27 +1,27 @@
-#{map-get($selectorMap, deleteForm)},
-#{map-get($selectorMap, createPostForm)},
-#{map-get($selectorMap, contactForm)},
-#{map-get($selectorMap, registerForm)},
-#{map-get($selectorMap, editForm)},
-#{map-get($selectorMap, bookForm)} {
+#{selector(deleteForm)},
+#{selector(createPostForm)},
+#{selector(contactForm)},
+#{selector(registerForm)},
+#{selector(editForm)},
+#{selector(bookForm)} {
   padding: 10px;
 }
 
-#{map-get($selectorMap, createPostRow)},
-#{map-get($selectorMap, registerRow)},
-#{map-get($selectorMap, editRow)} {
+#{selector(createPostRow)},
+#{selector(registerRow)},
+#{selector(editRow)} {
   display: $webflex;
   display: $msflex;
   display: $flex;
   margin-bottom: 20px;
 }
 
-#{map-get($selectorMap, contactBtn)},
-#{map-get($selectorMap, editBtn)},
-#{map-get($selectorMap, createPostBtn)},
-#{map-get($selectorMap, LoginBtn)},
-#{map-get($selectorMap, registerBtn)},
-#{map-get($selectorMap, bookBtn)} {
+#{selector(contactBtn)},
+#{selector(editBtn)},
+#{selector(createPostBtn)},
+#{selector(LoginBtn)},
+#{selector(registerBtn)},
+#{selector(bookBtn)} {
   background-color: #0275d8;
   margin-left: $auto;
   margin-right: $auto;
@@ -31,7 +31,7 @@
   cursor: $pointer;
 }
 
-#{map-get($selectorMap, deleteBtn)} {
+#{selector(deleteBtn)} {
   background-color: #d9534f;
   margin-left: $auto;
   margin-right: $auto;
@@ -41,60 +41,60 @@
   cursor: $pointer;
 }
 
-#{map-get($selectorMap, bookBtn)} {
+#{selector(bookBtn)} {
   &:hover {
     color: #292b2c;
   }
 }
 
-#{map-get($selectorMap, editBtn)} {
+#{selector(editBtn)} {
   &:hover {
     color: #292b2c;
   }
 }
 
-#{map-get($selectorMap, createPostBtn)} {
+#{selector(createPostBtn)} {
   &:hover {
     color: #292b2c;
   }
 }
 
-#{map-get($selectorMap, loginBtn)} {
+#{selector(loginBtn)} {
   &:hover {
     color: #292b2c;
   }
 }
 
-#{map-get($selectorMap, registerBtn)} {
+#{selector(registerBtn)} {
   &:hover {
     color: #292b2c;
   }
 }
 
-#{map-get($selectorMap, contactBtn)} {
+#{selector(contactBtn)} {
   &:hover {
     color: #292b2c;
   }
 }
 
-#{map-get($selectorMap, logoutBtn)} {
+#{selector(logoutBtn)} {
   &:hover {
     color: #292b2c;
   }
 }
 
-#{map-get($selectorMap, contactRow)},
-#{map-get($selectorMap, loginRow)},
-#{map-get($selectorMap, bookRow)} {
+#{selector(contactRow)},
+#{selector(loginRow)},
+#{selector(bookRow)} {
   display: $webflex;
   display: $msflex;
   display: $flex;
   margin-bottom: 15px;
 }
 
-#{map-get($selectorMap, input)},
-#{map-get($selectorMap, txtArea)},
-#{map-get($selectorMap, selectArea)} {
+#{selector(input)},
+#{selector(txtArea)},
+#{selector(selectArea)} {
   display: $block;
   width: 100%;
   min-height: calc(1.5em + 0.75rem + 2px);
@@ -120,15 +120,15 @@
   margin-bottom: 10px;
 }
 
-#{map-get($selectorMap, logoutForm)} {
+#{selector(logoutForm)} {
   margin-left: 10px;
 }
 
-#{map-get($selectorMap, bookBtn)} {
+#{selector(bookBtn)} {
   margin-left: 150px;
 }
 
-#{map-get($selectorMap, logoutBtn)} {
+#{selector(logoutBtn)} {
   background-color: #d9534f;
   color: #f7f7f7;
   padding: 10px;
@@ -136,8 +136,8 @@
   margin-bottom: 6px;
 }
 
-#{map-get($selectorMap, input)} :hover,
-#{map-get($selectorMap, txtArea)} :hover {
+#{selector(input)} :hover,
+#{selector(txtArea)} :hover {
   border-color: #0275d8;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) $insetbrd,
     0 0 8px color(lightblue);
@@ -145,29 +145,29 @@
   outline: 0 $none;
 }
 
-#{map-get($selectorMap, label)} {
-  font-weight:bold;
+#{selector(label)} {
+  font-weight: bold;
   white-space: $dntwrap;
 }
 
-#{map-get($selectorMap, accountForm)} {
+#{selector(accountForm)} {
   padding: 10px;
 }
 
 @media screen and (max-width: 1900px) {
-  #{map-get($selectorMap, loginRow)},
-  #{map-get($selectorMap, createPostRow)},
-  #{map-get($selectorMap, registerRow)},
-  #{map-get($selectorMap, editRow)},
-  #{map-get($selectorMap, contactRow)},
-  #{map-get($selectorMap, bookRow)} {
+  #{selector(loginRow)},
+  #{selector(createPostRow)},
+  #{selector(registerRow)},
+  #{selector(editRow)},
+  #{selector(contactRow)},
+  #{selector(bookRow)} {
     -webkit-box-orient: $vertical;
     -webkit-box-direction: $normal;
     -ms-flex-direction: $col;
     flex-direction: $col;
   }
 
-  #{map-get($selectorMap, fullnameLabel)} {
+  #{selector(fullnameLabel)} {
     white-space: $dntwrap;
   }
 }

@@ -1,6 +1,6 @@
-@media screen and (max-width:1900px) {
-  #{map-get($selectorMap, bookLine)},
-  #{map-get($selectorMap, loginLine4)} {
+@media screen and (max-width: 1900px) {
+  #{selector(bookLine)},
+  #{selector(loginLine4)} {
     width: 400px;
   }
 }

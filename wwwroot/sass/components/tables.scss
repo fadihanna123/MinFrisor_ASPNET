@@ -1,19 +1,19 @@
-#{map-get($selectorMap, prices)} {
+#{selector(prices)} {
   margin: 0 $auto;
   margin-left: 20px;
   margin-bottom: 10px;
 
-  #{map-get($selectorMap, table)},
-  #{map-get($selectorMap, th)},
-  #{map-get($selectorMap, tr)},
-  #{map-get($selectorMap, td)} {
+  #{selector(table)},
+  #{selector(th)},
+  #{selector(tr)},
+  #{selector(td)} {
     border: 1px solid color(black);
     border-collapse: collapse;
   }
 }
 
-#{map-get($selectorMap, table)} {
-  #{map-get($selectorMap, td)} {
+#{selector(table)} {
+  #{selector(td)} {
     padding: 10px;
     width: 100%;
 
@@ -22,7 +22,7 @@
     }
   }
 
-  #{map-get($selectorMap, th)} {
+  #{selector(th)} {
     background: #292b2c;
     color: #f7f7f7;
     padding: 10px;
@@ -30,17 +30,17 @@
 }
 
 @media screen and (max-width: 1900px) {
-  #{map-get($selectorMap, table)} {
-    #{map-get($selectorMap, td)} {
+  #{selector(table)} {
+    #{selector(td)} {
       padding: 0;
     }
   }
 
-  #{map-get($selectorMap, prices)} {
+  #{selector(prices)} {
     width: 400px;
   }
 
-  #{map-get($selectorMap, bookTable)} {
+  #{selector(bookTable)} {
     width: 10px;
     height: 600px;
     position: relative;

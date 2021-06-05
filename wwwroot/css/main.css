@@ -95,14 +95,6 @@ img {
     border: none;
   }
 }
-#container {
-  font-family: Cambria, Georgia;
-  width: 1400px;
-  margin: 0 auto;
-  background: #bdedff;
-  overflow: hidden;
-}
-
 .left {
   float: left;
   padding: 10px;
@@ -213,6 +205,14 @@ img {
     flex-direction: column;
   }
 }
+#container {
+  font-family: Cambria, Georgia;
+  width: 1400px;
+  margin: 0 auto;
+  background: #bdedff;
+  overflow: hidden;
+}
+
 .card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px  8px 0 rgba(0, 0, 0, 0.2);
@@ -223,7 +223,6 @@ img {
   font-size: 22px;
   line-height: 2em;
 }
-
 .card:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);

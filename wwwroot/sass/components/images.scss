@@ -1,10 +1,10 @@
-#{map-get($selectorMap, firstImage)} {
+#{selector(firstImage)} {
   width: 250px;
   height: 250px;
   margin: 10px 10px;
 }
 
-#{map-get($selectorMap, secondImage)} {
+#{selector(secondImage)} {
   width: 250px;
   height: 250px;
   margin: 10px 10px;
